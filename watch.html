@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop watch</title>
+    <link rel="stylesheet" href="watch.css">
+    <script src="watch.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="heading">
+            <h1>Task 02 : Stop Watch</h1>
+        </div>
+        <div class="watch">
+            <div class="holder">
+                <div class="timer" >
+                    <p id="milli" >
+                        0 : 0
+                    </p>
+                </div>
+                <div class="timer" >
+                    <p id="seconds" >
+                        0 : 0
+                    </p>
+                </div>
+                <div class="timer">
+                    <p id="minute" >
+                        0 : 0
+                    </p>
+                </div>
+                <div class="timer">
+                    <p id="hour" >
+                        0 : 0
+                    </p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="addBtn">
+                    <button class="btn start" id="start" onclick=start()>
+                        start
+                    </button>
+                    
+                    <div class="stat_1 ">
+                        <div class="cont">
+                            <button class="btn stop hidden " id="stop" onclick=stop()>
+                                stop
+                            </button>
+                            <button class="btn reset hidden " id="reset" onclick=reset()>
+                                reset
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
